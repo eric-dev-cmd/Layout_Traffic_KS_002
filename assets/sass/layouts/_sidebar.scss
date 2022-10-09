@@ -1,0 +1,37 @@
+.box {
+    & h2.header{
+        text-align: center;
+        color: #FDF9DE;
+        display: block;
+        font-size: 15px;
+        background-color: #242254;
+        border: none;
+        border-radius: 7px 7px 2px 2px;
+        font-weight: 700;
+        margin: 0;
+        padding: 9px 0 9px 0;
+    }
+}
+.box-content{
+    background: $white;
+    & ul{
+        padding-left: 0;
+        & li{
+            list-style: none;
+            width: 100%;
+            padding: 7px 0 7px 12px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+            & a{
+                text-decoration: none;
+                color: #242254;
+                border: 0;
+                font-size: 13px;
+                display: block;
+                font-weight: 700;
+                &:hover{
+                    color: #E3386A;
+                }
+            }
+        }
+    }
+}

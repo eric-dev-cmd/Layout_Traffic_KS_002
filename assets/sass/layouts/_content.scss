@@ -1,0 +1,16 @@
+.wrapper-content{
+    display: flex;
+    & .sidebar-left{
+        width: 18%;
+        padding: 8px 0;
+    }
+    & .content-main{
+        width: 63.5%;
+        padding: 8px 12px;
+        // border: 1px solid
+    }
+    & .sidebar-right{
+        width: 18%;
+        padding: 8px 0;
+    }
+}

@@ -9,8 +9,8 @@ body {
   color: #333;
 }
 
-.bg-body {
-  background-color: #f5f4fb;
+.bg-body-theme {
+  background-color: #f5f4fb !important;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
 }
 
 .bg-header {
-  background-color: #7167FF;
+  background-color: #242254;
 }
 
 nav .main-menu {
@@ -39,7 +39,7 @@ nav .main-menu li a {
   font-weight: 700;
   padding: 10px 20px;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #000, #0d0b27 50%, #fff 50%);
+  background-image: linear-gradient(to right, #FDF9DE, #e0d78f 50%, #fff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -51,7 +51,7 @@ nav .main-menu li a {
 }
 nav .main-menu li a:before {
   content: "";
-  background: #aeb8b8;
+  background: #FDF9DE;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -73,6 +73,59 @@ nav .main-menu li a:hover::before {
   float: right;
   cursor: pointer;
   display: none;
+}
+
+.wrapper-content {
+  display: flex;
+}
+.wrapper-content .sidebar-left {
+  width: 18%;
+  padding: 8px 0;
+}
+.wrapper-content .content-main {
+  width: 63.5%;
+  padding: 8px 12px;
+}
+.wrapper-content .sidebar-right {
+  width: 18%;
+  padding: 8px 0;
+}
+
+.box h2.header {
+  text-align: center;
+  color: #FDF9DE;
+  display: block;
+  font-size: 15px;
+  background-color: #242254;
+  border: none;
+  border-radius: 7px 7px 2px 2px;
+  font-weight: 700;
+  margin: 0;
+  padding: 9px 0 9px 0;
+}
+
+.box-content {
+  background: #fff;
+}
+.box-content ul {
+  padding-left: 0;
+}
+.box-content ul li {
+  list-style: none;
+  width: 100%;
+  padding: 7px 0 7px 12px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.box-content ul li a {
+  text-decoration: none;
+  color: #242254;
+  border: 0;
+  font-size: 13px;
+  display: block;
+  font-weight: 700;
+}
+.box-content ul li a:hover {
+  color: #E3386A;
 }
 
 /* Portrait */
