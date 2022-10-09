@@ -9,7 +9,153 @@ body {
   color: #333;
 }
 
+.bg-body {
+  background-color: #f5f4fb;
+}
+
+.header {
+  width: 100%;
+}
+
+.bg-header {
+  background-color: #7167FF;
+}
+
+nav .main-menu {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+}
+nav .main-menu li {
+  list-style: none;
+}
+nav .main-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #000, #0d0b27 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+nav .main-menu li a:before {
+  content: "";
+  background: #aeb8b8;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  transition: all 0.3s ease-in-out;
+}
+nav .main-menu li a:hover {
+  background-position: 0;
+}
+nav .main-menu li a:hover::before {
+  width: 100%;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
 /* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-main {
+    padding: 6px 0;
+  }
+  .header-main nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 48px);
+    background-color: #333;
+    padding-left: 0;
+    padding-right: 0;
+    top: 48px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  .header-main nav.active {
+    left: 0;
+  }
+  .header-main nav ul {
+    padding-top: 0;
+    display: block;
+    text-align: center;
+  }
+  .header-main nav ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .header-main nav ul li a {
+    font-size: 14px;
+  }
+  .header-main nav ul li a:hover {
+    color: rgb(19, 18, 18);
+  }
+  nav .main-menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
 /* Portrait and Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header-main {
+    padding: 6px 0;
+  }
+  .header-main nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 48px);
+    background-color: #333;
+    padding-left: 0;
+    padding-right: 0;
+    top: 48px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  .header-main nav.active {
+    left: 0;
+  }
+  .header-main nav ul {
+    padding-top: 0;
+    display: block;
+    text-align: center;
+  }
+  .header-main nav ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .header-main nav ul li a {
+    font-size: 14px;
+  }
+  .header-main nav ul li a:hover {
+    color: rgb(19, 18, 18);
+  }
+  nav .main-menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

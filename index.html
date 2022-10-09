@@ -10,13 +10,16 @@
     href="./assets/css/bootstrap.min.css"
     rel="stylesheet"
     />
-    <link href="./assets/css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="./assets/css/font.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./assets/fontawesome-pro-5.15.2/css/all.min.css">
+
 </head>
 <body>
-    <div class="app">
+    <div class="app bg-body">
         <!-- Header -->
         <header class="header">
-            <div class="header-main bg-danger">
+            <div class="header-main bg-header">
                 <div class="container">
                     <div class="row">
                         <nav>
@@ -30,6 +33,9 @@
                                 <li><a href="news.html" rel="nofollow" data-relforced="true">TIN TỨC</a></li>
                             </ul>
                         </nav>
+                        <div class="menu-toggle">
+                            <i class="far fa-bars"></i>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -43,5 +49,17 @@
 
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log(">>> vv")
+
+            $('.menu-toggle i').click(function(){
+                console.log(">>> vv")
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
 </body>
 </html>
