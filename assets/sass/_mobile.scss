@@ -43,6 +43,25 @@
     .menu-toggle{
       display: block;
     }
+    .wrapper-content{
+      flex-wrap: wrap;  
+      & .sidebar-left{
+          width: 100%;
+          // padding: 8px 0;
+      }
+      & .content-main{
+          width: 100%;
+          // padding: 8px 12px;
+          // border: 1px solid
+      }
+      & .sidebar-right{
+          width: 100%;
+          // padding: 8px 0;
+      }
+    }
+    .box-content ul li{
+      text-align: center;
+    }
 }
 /* Portrait and Landscape */
 @media only screen 
@@ -87,5 +106,24 @@
     }
     .menu-toggle{
       display: block;
+    }
+    .wrapper-content{
+      flex-wrap: wrap;  
+      & .sidebar-left{
+          width: 100%;
+          // padding: 8px 0;
+      }
+      & .content-main{
+          width: 100%;
+          // padding: 8px 12px;
+          // border: 1px solid
+      }
+      & .sidebar-right{
+          width: 100%;
+          // padding: 8px 0;
+      }
+    }
+    .box-content ul li{
+      text-align: center;
     }
 }

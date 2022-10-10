@@ -10,8 +10,6 @@
          href="./assets/css/bootstrap.min.css"
          rel="stylesheet"
          />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!-- <link href="./assets/css/font.css" rel="stylesheet"> -->
       <link rel="stylesheet" href="./assets/fontawesome-pro-5.15.2/css/all.min.css">
    </head>
    <body>
@@ -41,10 +39,10 @@
          </header>
          <!-- Main -->
          <main class="wrapper container">
-            <section class="my-2">
+            <section class="my-3">
                <div class="row">
                   <div class="wrapper-content">
-                    <!-- Sidebar left -->
+                     <!-- Sidebar left -->
                      <div class="sidebar-left">
                         <section id="box-sidebar-left" class="box box-sidebar-left">
                            <div class="box">
@@ -128,9 +126,137 @@
                      </div>
                      <!-- Content center -->
                      <div class="content-main">
-                        Center
+                        <section class="box-search bg-dark-search">
+                           <form name="search-sim-form">
+                              <div class="form-row1">
+                                 <div class="input-group fs-14">
+                                    <input type="tel" value="" placeholder="Nhập số cần tìm." class="form-control fs-14">
+                                    <span class="input-group-btn">
+                                    <button type="submit" class="btn btn-warning btn-block text-uppercase fw-bold txt-main fs-14"><i class="fas fa-search fs-14">&nbsp;</i>Tìm Sim</button>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="content-des text-white">
+                                 <p>• Tìm sim có số <span style="color:#f1c40f;"><strong>6789</strong></span> bạn hãy gõ <span style="color:#f1c40f;"><strong>6789</strong></span><br>
+                                    • Tìm sim có đầu <span style="color:#f1c40f;"><strong>090</strong></span> đuôi <span style="color:#f1c40f;"><strong>8888</strong></span> hãy gõ <span style="color:#f1c40f;"><strong>090*8888</strong></span><br>
+                                    • Tìm sim bắt đầu bằng <span style="color:#f1c40f;"><strong>0914</strong></span> đuôi bất kỳ, hãy gõ: <span style="color:#f1c40f;"><strong>0914*</strong></span>
+                                 </p>
+                              </div>
+                              <div class="mobile-search-advance display-none">
+                                 <div class="form-row2">
+                                    <div class="col-md-121 mb-3">
+                                       <select data-selected="" class="form-control custom-select custom-select-sm fs-14">
+                                          <option value="">Chọn mạng di động</option>
+                                          <option value="viettel">Viettel</option>
+                                          <option value="mobifone">Mobifone</option>
+                                          <option value="vinaphone">Vinaphone</option>
+                                          <option value="vietnamobile">Vietnamobile</option>
+                                          <option value="gmobile">Gmobile</option>
+                                          <option value="itel">Itel</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="row g-3">
+                                    <div class="col-md-6">
+                                       <input type="number" min="0" name="sell_price_from" value="" placeholder="Giá từ" class="form-control j-format-number fs-14">
+                                    </div>
+                                    <div class="col-md-6">
+                                       <input type="number" min="0" name="sell_price_to" value="" placeholder="Giá đến" class="form-control j-format-number fs-14">
+                                    </div>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="col-md-12 mb-3 d-flex text-white mt-4">
+                                       <label class="me-2 fw-bold">Đầu số:</label>
+                                       <div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="09" id="09" data-is-checked="" class="custom-control-input">
+                                             <label for="09" class="custom-control-label">09</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="03" id="03" data-is-checked="" class="custom-control-input">
+                                             <label for="03" class="custom-control-label">03</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="05" id="05" data-is-checked="" class="custom-control-input">
+                                             <label for="05" class="custom-control-label">05</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="07" id="07" data-is-checked="" class="custom-control-input">
+                                             <label for="07" class="custom-control-label">07</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="08" id="08" data-is-checked="" class="custom-control-input">
+                                             <label for="08" class="custom-control-label">08</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-6 col-6 mb-3">
+                                       <input type="number" min="1" max="100" name="total_score" value="" placeholder="Tổng điểm: <81" class="form-control fs-14">
+                                    </div>
+                                    <div class="col-md-6 col-6 mb-3">
+                                       <input type="number" min="1" max="10" name="total_node" value="" placeholder="Tổng nút: 1-10" class="form-control fs-14">
+                                    </div>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="col-md-12 text-white">
+                                       <label class="mr-2 white-space-nowrap fw-bold">Tránh số:</label>
+                                       <div css-module="">
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox1" value="1" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox1" class="custom-control-label">1</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox2" value="2" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox2" class="custom-control-label">2</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox3" value="3" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox3" class="custom-control-label">3</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox4" value="4" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox4" class="custom-control-label">4</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox5" value="5" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox5" class="custom-control-label">5</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox6" value="6" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox6" class="custom-control-label">6</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox7" value="7" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox7" class="custom-control-label">7</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox8" value="8" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox8" class="custom-control-label">8</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox9" value="9" data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox9" class="custom-control-label">9</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <small id="js-toggle-advance-search" class="w-100 form-text text-warning text-center d-inline-block cursor-pointer">Tìm kiếm nâng cao</small>
+                           </form>
+                        </section>
+                        <section>
+                           <div class="mt-4 mb-3">
+                              <h1 class="fw-bold fs-18">Sim số đẹp</h1>
+                              <div class="content">
+                                 <p>Kho SIM SỐ ĐẸP Viettel, Mobi, Vina Giá Cực Rẻ tại KhoSoDep, Kho Sim đẹp tại Kho Số
+                                    Đẹp. Giao sim miễn phí toàn quốc, đăng ký chính chủ khi nhận sim.</p>
+                              </div>
+                           </div>
+                        </section>
                      </div>
-                    <!-- Sidebar right -->
+                     <!-- Sidebar right -->
                      <div class="sidebar-right">
                         Right
                      </div>
@@ -145,11 +271,11 @@
       <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
       <script type="text/javascript">
          $(document).ready(function(){
-             console.log(">>> vv")
-         
              $('.menu-toggle i').click(function(){
-                 console.log(">>> vv")
                  $('nav').toggleClass('active')
+             })
+             $('#js-toggle-advance-search').click(function(){
+                 $('.mobile-search-advance').toggleClass('d-block')
              })
          })
       </script>

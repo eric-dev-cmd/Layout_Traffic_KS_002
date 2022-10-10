@@ -12,3 +12,25 @@ body {
 .bg-body-theme{
   background-color: $bgBody !important;
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+.fs-14{
+  font-size: 14px !important;
+}
+.fs-18{
+  font-size: 18px !important;
+}
+.w-select{
+  width: 97% !important;
+}
+.white-space-nowrap {
+  white-space: nowrap;
+}
+.display-none{
+  display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 18px;
+  font-weight: 300;
+}
