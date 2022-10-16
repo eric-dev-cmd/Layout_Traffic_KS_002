@@ -257,6 +257,14 @@ nav .main-menu li a:hover::before {
   overflow: visible;
 }
 
+.content_after {
+  margin-bottom: 20px;
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 0.5rem;
+  position: relative;
+}
+
 .box h2.header {
   text-align: center;
   color: #FDF9DE;
