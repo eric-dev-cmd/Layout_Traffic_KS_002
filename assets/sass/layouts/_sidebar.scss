@@ -6,7 +6,7 @@
         font-size: 15px;
         background-color: #242254;
         border: none;
-        border-radius: 7px 7px 2px 2px;
+        border-radius: 25px 25px 2px 2px;
         font-weight: 700;
         margin: 0;
         padding: 11px 0 11px 0;
@@ -21,6 +21,7 @@
             width: 100%;
             padding: 7px 0 7px 12px;
             border-bottom: 1px solid rgb(224, 224, 224);
+            text-align: center;
             & a{
                 text-decoration: none;
                 color: #242254;
@@ -35,3 +36,4 @@
         }
     }
 }
+

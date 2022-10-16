@@ -2,7 +2,12 @@
     width: 100%;
 }
 .bg-header{
-    background-color: $bgHeader;
+    background-color: $bgHeaderHover !important;
+    border-color: $bgHeaderHover !important;
+    &:hover{
+        background-color: $bgHeader !important;
+        border-color: $bgHeader !important;
+    }
 }
 nav .main-menu {
     margin-bottom: 0;

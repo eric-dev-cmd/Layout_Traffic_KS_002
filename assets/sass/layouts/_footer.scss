@@ -1,0 +1,18 @@
+.main-footer{
+    list-style-type: none;
+    padding-left: 0;
+    & li{
+        padding-top: 16px;
+        &:first-child{
+            padding-top: 1px;
+        }
+        & a{
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            &:hover{
+                color: #805FA2;
+            }
+        }
+    }
+}

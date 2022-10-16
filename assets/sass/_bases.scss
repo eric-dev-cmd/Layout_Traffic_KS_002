@@ -15,6 +15,9 @@ body {
 .cursor-pointer{
   cursor: pointer;
 }
+.fs-13{
+  font-size: 13px !important;
+}
 .fs-14{
   font-size: 14px !important;
 }
@@ -33,4 +36,73 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 300;
+}
+.rdx-custom-1{
+  border-radius: 10px / 30px;
+}
+.rdx-custom-2{
+  border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+}
+.rdx-custom-3{
+  border-radius: 5px 25px !important;
+}
+.btn-datsim{
+  color: #fff !important;
+  background-color: #242254e6 !important;
+  border-color: #242254e6 !important;
+  &:hover{
+    background-color: $main !important;
+    border-color: $main !important;
+  }
+}
+.sim_price{
+  color: #007a57;
+}
+.sim_price-vnmb{
+  color: #FF6600;
+}
+.sim_price-vnp{
+  color: #0198e1
+}
+.text-main{
+  color: #242254;
+}
+.share_btn2{
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+margin:2px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+color:white;
+  border-radius: 12px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .3s;
+}
+.share_btn2 .fa {line-height:50px}
+.share_btn2:hover{
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.share_btn2.shtw {background: #22b8ff;}
+.share_btn2.shfb {background: #6680d8;}
+.share_btn2.shpkt {background: #ff6d82;}
+.share_btn2.shfdly {background: #7bda72;}
+.share_btn2.shgp {background: #fd6969;}
+.bg-footer{
+  background: #E2DBF1;
+}
+.text-footer{
+  color: #805FA2;
+}
+.mw-124{
+  min-width: 124px;
+}
+.mw-104{
+  min-width: 104px;
 }
