@@ -18,6 +18,7 @@
         transition: .5s;
         &.active{
           left: 0;
+          z-index: 1000;
         }
         & ul{
           padding-top: 0;
@@ -51,7 +52,8 @@
       }
       & .content-main{
           width: 100%;
-          // padding: 8px 12px;
+          padding: 0;
+          margin-top: -26px;
           // border: 1px solid
       }
       & .sidebar-right{
@@ -66,12 +68,32 @@
       display: none;
     }
     .content-filters{
-        & .box{
-            margin-right: 18px;
-        }
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+      height: 5.8%;
+      &::-webkit-scrollbar{
+        width: 0;
+      } 
+      & .box{
+          margin-right: 18px;
+      }
     }
     .fs-12-mb{
       font-size: 12px;
+    }
+    .sidebar-left{
+      order: 2 !important;
+    }
+    .z-index-mb-1{
+      position: absolute;
+      z-index: 1;
+    }
+    #table-sim{
+      margin-top: 64px;
+    }
+    .dropdown-menu.show{
+      display: grid !important;
     }
 }
 /* Portrait and Landscape */
@@ -79,16 +101,33 @@
   and (min-width: 768px) 
   and (max-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    .z-index-mb-1{
+      position: absolute;
+      z-index: 1;
+    }
+    .sidebar-left{
+      order: 2 !important;
+    }
     .fs-12-mb{
       font-size: 12px;
     }
     .content-filters{
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+      height: 10%;
+      &::-webkit-scrollbar{
+        width: 0;
+      } 
       & .box{
           margin-right: 18px;
       }
   }
     .hide-mb{
       display: none;
+    }
+    .dropdown-menu.show{
+      display: grid !important;
     }
     .header-main{
       padding: 6px 0;
@@ -104,6 +143,8 @@
         transition: .5s;
         &.active{
           left: 0;
+          z-index: 1000;
+          
         }
         & ul{
           padding-top: 0;
@@ -137,7 +178,8 @@
       }
       & .content-main{
           width: 100%;
-          // padding: 8px 12px;
+          padding: 0;
+          margin-top: -26px;
           // border: 1px solid
       }
       & .sidebar-right{
