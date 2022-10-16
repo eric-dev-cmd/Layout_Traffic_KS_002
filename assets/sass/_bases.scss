@@ -8,6 +8,8 @@ body {
   font-size: 14px !important;
   font-family: "Exo 2", sans-serif;
   color: #333;
+  // overflow: scroll;
+  // overflow-x: hidden;
 }
 .bg-body-theme{
   background-color: $bgBody !important;
@@ -105,4 +107,7 @@ color:white;
 }
 .mw-104{
   min-width: 104px;
+}
+.w-100{
+  width: 100%;
 }
