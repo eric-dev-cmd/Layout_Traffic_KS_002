@@ -151,6 +151,24 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+.pagination a.active {
+  background-color: rgba(36, 34, 84, 0.7960784314);
+  color: white;
+  border: 1px solid rgba(36, 34, 84, 0.7960784314);
+}
+
 .header {
   width: 100%;
 }
@@ -267,6 +285,14 @@ nav .main-menu li a:hover::before {
   overflow-y: auto;
   padding: 0.5rem;
   position: relative;
+}
+
+.a {
+  position: relative;
+}
+
+.c {
+  display: flex;
 }
 
 .box h2.header {
@@ -446,13 +472,18 @@ nav .main-menu li a:hover::before {
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
-    height: 5.8%;
+  }
+  .content-filters.active-filter {
+    height: 80%;
+  }
+  .content-filters.unactive-filter {
+    height: 0;
   }
   .content-filters::-webkit-scrollbar {
     width: 0;
   }
   .content-filters .box {
-    margin-right: 18px;
+    margin-right: 27px;
   }
   .fs-12-mb {
     font-size: 12px;
@@ -465,10 +496,13 @@ nav .main-menu li a:hover::before {
     z-index: 1;
   }
   #table-sim {
-    margin-top: 64px;
+    margin-top: 46px;
   }
   .dropdown-menu.show {
     display: grid !important;
+  }
+  .content-flex {
+    margin-top: 26px;
   }
 }
 /* Portrait and Landscape */
@@ -487,13 +521,18 @@ nav .main-menu li a:hover::before {
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
-    height: 10%;
+  }
+  .content-filters.active-filter {
+    height: 80%;
+  }
+  .content-filters.unactive-filter {
+    height: 0;
   }
   .content-filters::-webkit-scrollbar {
     width: 0;
   }
   .content-filters .box {
-    margin-right: 18px;
+    margin-right: 27px;
   }
   .hide-mb {
     display: none;
@@ -556,6 +595,46 @@ nav .main-menu li a:hover::before {
   }
   .box-content ul li {
     text-align: center;
+  }
+  .content-flex {
+    margin-top: 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .relative-none {
+    position: inherit;
+  }
+  .content-filters::-webkit-scrollbar {
+    width: 0;
+  }
+  .content-filters .box {
+    margin-right: 27px;
+  }
+}
+@media only screen and (min-width: 1024) and (max-width: 1399) {
+  .hide-mb {
+    display: none;
+  }
+  .content-filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .content-filters.active-filter {
+    height: 80%;
+  }
+  .content-filters.unactive-filter {
+    height: 0;
+  }
+  .content-filters::-webkit-scrollbar {
+    width: 0;
+  }
+  .content-filters .box {
+    margin-right: 27px;
+  }
+  .z-index-mb-1 {
+    position: absolute;
+    z-index: 1;
   }
 }
 
