@@ -1,49 +1,26 @@
-let btnReceiver = document.querySelector("#btn-receiver");
-let btnReceiver2 = document.querySelector("#btn-receiver-2");
-let inputPassWord = document.querySelector("#inputPass");
-let text = document.querySelector("#btn-content");
-let btnText = document.querySelector("#btn-text");
+// Elements
+const showFilterAdvanced = document.querySelector("#js-toggle-advance-search");
+// Event listener
+showFilterAdvanced.addEventListener("click", () => {
+   const show = showFilterAdvanced.classList.contains("show");
 
-let alertError = document.getElementById("alertError")
-alertError.style.display = "none";
-
-function errorMessage() {
-  let error = document.getElementById("error")
-  if (isNaN(inputPassWord.value))
-  {
-      alertError.style.display = "block";
-      error.textContent = "Mã của bạn không chính xác hoặc đã hết hạn!"
-      alertError.hidden = false;
-  } else {
-      error.textContent = ""
-  }
-}
-
-function copy() {
-  let copyText = document.querySelector("#inputCopy");
-  let copyButton = document.querySelector("#btnCopy");
-  copyText.select();
-  document.execCommand("copy");
-  copyButton.innerText = "Copied!";
-}
-
-document.querySelector("#btnCopy").addEventListener("click", copy);
-
-if(text){
-  text.hidden = true;
-}
-
-btnReceiver.addEventListener("click", () => {
-  if (text.hidden) {
-    text.hidden = false;
-  } else {
-    text.hidden = true;
-  }
+   if (show) {
+      showFilterAdvanced.classList.add("hide");
+      showFilterAdvanced.classList.remove("show");
+      showFilterAdvanced.innerText = "Tìm kiếm nâng cao";
+      console.log(".....show");
+   } else {
+      showFilterAdvanced.classList.remove("hide");
+      showFilterAdvanced.classList.add("show");
+      showFilterAdvanced.innerText = "Đóng";
+      console.log(".....hide");
+   }
 });
-btnReceiver2.addEventListener("click", () => {
-  if (text.hidden) {
-    text.hidden = false;
-  } else {
-    text.hidden = true;
-  }
-});
+$(document).ready(function () {
+   $('.menu-toggle i').click(function () {
+      $('nav').toggleClass('active')
+   })
+   $('#js-toggle-advance-search').click(function () {
+      $('.mobile-search-advance').toggleClass('d-block')
+   })
+})
