@@ -1,1 +1,38 @@
 // NEWS
+.blog-list-style-5 {
+    width: 100%;
+    & .blog-item {
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    & .blog-image {
+      display: inline-block;
+      width: 30%;
+      // max-width: 184px;
+      // height: 100%;
+    }
+    & .blog-title-wraper {
+      display: inline-block;
+      padding-left: 0.3rem;
+      width: 68%;
+    }
+    & .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-title {
+      font-size: 1rem;
+    }
+    .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-title {
+      font-size: 12px;
+      font-weight: 700;
+      width: 100%;
+    }
+    & .blog-title-wraper .blog-info {
+      bottom: 0;
+      position: absolute;
+      width: 69%;
+    }
+  }
+  .blog-title a{
+    color: rgb(7, 33, 148) !important;
+    &:hover{
+        color: red !important;
+    }
+  }

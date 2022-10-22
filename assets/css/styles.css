@@ -169,6 +169,31 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(36, 34, 84, 0.7960784314);
 }
 
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+ul {
+  padding: 0;
+}
+
+.fs-150 {
+  font-size: 120% !important;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
 .header {
   width: 100%;
 }
@@ -176,10 +201,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-header {
   background-color: #242254 !important;
   border-color: #242254 !important;
-}
-.bg-header:hover {
-  background-color: rgba(36, 34, 84, 0.8705882353) !important;
-  border-color: rgba(36, 34, 84, 0.8705882353) !important;
 }
 
 nav .main-menu {
@@ -407,8 +428,131 @@ nav .main-menu li a:hover::before {
   margin-right: 3px !important;
 }
 
+.wrapper-img {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.wh-detail-img {
+  width: 800px;
+  height: 450px;
+}
+
+.blog-list-style-5 {
+  width: 100%;
+}
+.blog-list-style-5 .blog-item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+.blog-list-style-5 .blog-image {
+  display: inline-block;
+  width: 30%;
+}
+.blog-list-style-5 .blog-title-wraper {
+  display: inline-block;
+  padding-left: 0.3rem;
+  width: 68%;
+}
+.blog-list-style-5 .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-list-style-5 .blog-title {
+  font-size: 1rem;
+}
+.blog-list-style-5 .blog-list-style-4 .blog-title, .blog-list-style-5 .blog-list-style-5 .blog-title {
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+}
+.blog-list-style-5 .blog-title-wraper .blog-info {
+  bottom: 0;
+  position: absolute;
+  width: 69%;
+}
+
+.blog-title a {
+  color: rgb(7, 33, 148) !important;
+}
+.blog-title a:hover {
+  color: red !important;
+}
+
+#related-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 -5px -10px;
+}
+#related-list a {
+  -ms-flex-align: center;
+  align-items: center;
+  color: #4a90e2;
+  font-size: 0.875rem;
+  -webkit-box-align: center;
+  margin: 0 5px 10px;
+  min-width: calc(33.3% - 10px);
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.contact a {
+  background: #2196F3;
+  min-width: 200px;
+  width: 100%;
+}
+
+.ico img {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.btn.btn-chat {
+  display: inline;
+  padding-bottom: 10px;
+}
+.btn.btn-chat span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact .btn.btn-chat {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.no-sim .contact .btn {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #333;
+  font-weight: 700;
+  margin: 0 0.25rem;
+  width: 150px;
+}
+
+ul {
+  padding: 0;
+}
+
 /* Portrait */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .content-detail {
+    margin-top: 20px;
+  }
+  .text-center-mb {
+    text-align: center;
+  }
+  .mt--7 {
+    margin-top: -7px !important;
+  }
+  #related-list a {
+    width: 100%;
+    text-align: center;
+  }
+  .content-tag-nosim {
+    margin-top: 20px;
+  }
   .header-main {
     padding: 6px 0;
   }
@@ -498,6 +642,9 @@ nav .main-menu li a:hover::before {
   #table-sim {
     margin-top: 46px;
   }
+  .table-sim-fix {
+    margin-top: 0px !important;
+  }
   .dropdown-menu.show {
     display: grid !important;
   }
@@ -507,6 +654,19 @@ nav .main-menu li a:hover::before {
 }
 /* Portrait and Landscape */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .text-center-mb {
+    text-align: center;
+  }
+  .mt--7 {
+    margin-top: -7px !important;
+  }
+  #related-list a {
+    width: 100%;
+    text-align: center;
+  }
+  .content-tag-nosim {
+    margin-top: 20px;
+  }
   .z-index-mb-1 {
     position: absolute;
     z-index: 1;
@@ -601,8 +761,14 @@ nav .main-menu li a:hover::before {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mt--7 {
+    margin-top: -7px !important;
+  }
   .relative-none {
     position: inherit;
+  }
+  .content-tag-nosim {
+    margin-top: 20px;
   }
   .content-filters::-webkit-scrollbar {
     width: 0;

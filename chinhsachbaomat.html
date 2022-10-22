@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trang chủ - Kho Sim Số Đẹp</title>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+   <div class="app bg-body-theme">
+      <!-- Header -->
+      <header class="header">
+         <div class="header-main bg-header">
+            <div class="container">
+               <div class="row">
+                  <nav>
+                     <ul class="main-menu">
+                        <li><a href="index.html">TRANG CHỦ</a></li>
+                        <li><a href="category.html">SIM VIETTEL</a></li>
+                        <li><a href="category.html">SIM VINAPHONE</a></li>
+                        <li><a href="category.html">SIM MOBIFONE</a></li>
+                        <li><a href="category.html">SIM VIETNAMOBILE</a></li>
+                        <li><a href="category.html">SIM ITEL</a></li>
+                        <li><a href="news.html" rel="nofollow" data-relforced="true">TIN TỨC</a></li>
+                     </ul>
+                  </nav>
+                  <div class="menu-toggle">
+                     <i class="far fa-bars"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Main -->
+      <main class="wrapper container">
+         <div class="row my-3">
+            <div class="wrapper-content">
+               <!-- Content center -->
+               <div class="content-main relative-none">
+                  <div class="d-flex flex-column position-relative">
+                     <!-- Search -->
+                     <div class="content-flex">
+                        <div class="box-search bg-dark-search d-block">
+                           <form name="search-sim-form">
+                              <div class="form-row1">
+                                 <div class="input-group fs-14">
+                                    <input type="tel" value="" placeholder="Nhập số cần tìm."
+                                       class="form-control fs-14">
+                                    <span class="input-group-btn">
+                                       <button type="submit"
+                                          class="btn btn-warning btn-block text-uppercase fw-bold txt-main fs-14"><i
+                                             class="fas fa-search fs-14">&nbsp;</i>Tìm Sim</button>
+                                    </span>
+                                 </div>
+                              </div>
+                              <div class="content-des text-white">
+                                 <p>• Tìm sim có số <span style="color:#f1c40f;"><strong>6789</strong></span> bạn
+                                    hãy
+                                    gõ
+                                    <span style="color:#f1c40f;"><strong>6789</strong></span><br>
+                                    • Tìm sim có đầu <span style="color:#f1c40f;"><strong>090</strong></span> đuôi
+                                    <span style="color:#f1c40f;"><strong>8888</strong></span> hãy gõ <span
+                                       style="color:#f1c40f;"><strong>090*8888</strong></span><br>
+                                    • Tìm sim bắt đầu bằng <span style="color:#f1c40f;"><strong>0914</strong></span>
+                                    đuôi
+                                    bất kỳ, hãy gõ: <span style="color:#f1c40f;"><strong>0914*</strong></span>
+                                 </p>
+                              </div>
+                              <div class="mobile-search-advance display-none">
+                                 <div class="form-row2">
+                                    <div class="col-md-121 mb-3">
+                                       <select data-selected=""
+                                          class="form-control custom-select custom-select-sm fs-14">
+                                          <option value="">Chọn mạng di động</option>
+                                          <option value="viettel">Viettel</option>
+                                          <option value="mobifone">Mobifone</option>
+                                          <option value="vinaphone">Vinaphone</option>
+                                          <option value="vietnamobile">Vietnamobile</option>
+                                          <option value="gmobile">Gmobile</option>
+                                          <option value="itel">Itel</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="row g-3">
+                                    <div class="col-md-6">
+                                       <input type="number" min="0" name="sell_price_from" value="" placeholder="Giá từ"
+                                          class="form-control j-format-number fs-14">
+                                    </div>
+                                    <div class="col-md-6">
+                                       <input type="number" min="0" name="sell_price_to" value="" placeholder="Giá đến"
+                                          class="form-control j-format-number fs-14">
+                                    </div>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="col-md-12 mb-3 d-flex text-white mt-4">
+                                       <label class="me-2 fw-bold">Đầu số:</label>
+                                       <div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="09" id="09"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="09" class="custom-control-label">09</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="03" id="03"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="03" class="custom-control-label">03</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="05" id="05"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="05" class="custom-control-label">05</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="07" id="07"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="07" class="custom-control-label">07</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="first_two_numbers[]" type="checkbox" value="08" id="08"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="08" class="custom-control-label">08</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-md-6 col-6 mb-3">
+                                       <input type="number" min="1" max="100" name="total_score" value=""
+                                          placeholder="Tổng điểm: <81" class="form-control fs-14">
+                                    </div>
+                                    <div class="col-md-6 col-6 mb-3">
+                                       <input type="number" min="1" max="10" name="total_node" value=""
+                                          placeholder="Tổng nút: 1-10" class="form-control fs-14">
+                                    </div>
+                                 </div>
+                                 <div class="form-row">
+                                    <div class="col-md-12 text-white">
+                                       <label class="mr-2 white-space-nowrap fw-bold">Tránh số:</label>
+                                       <div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox1" value="1"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox1" class="custom-control-label">1</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox2" value="2"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox2" class="custom-control-label">2</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox3" value="3"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox3" class="custom-control-label">3</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox4" value="4"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox4" class="custom-control-label">4</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox5" value="5"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox5" class="custom-control-label">5</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox6" value="6"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox6" class="custom-control-label">6</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox7" value="7"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox7" class="custom-control-label">7</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox8" value="8"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox8" class="custom-control-label">8</label>
+                                          </div>
+                                          <div class="custom-control custom-checkbox custom-control-inline">
+                                             <input name="has_not[]" type="checkbox" id="inlineCheckbox9" value="9"
+                                                data-is-checked="" class="custom-control-input">
+                                             <label for="inlineCheckbox9" class="custom-control-label">9</label>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <small id="js-toggle-advance-search"
+                                 class="w-100 form-text text-warning text-center d-inline-block cursor-pointer hide">Tìm
+                                 kiếm
+                                 nâng cao</small>
+                           </form>
+                        </div>
+
+                     </div>
+                     <div class="privacy-policy">
+                        <article>
+                           <div class="box-content-privacy">
+                              <h1 class="fs-18 fw-bold mb-3 mt-3">Chính sách bảo mật</h1>
+                              <div class="page-detail post-content-wrap">
+                                 <p>Với&nbsp;<a href="javascript:void(0)"><strong>KhoSomSoDep</strong></a>&nbsp;thông
+                                    tin
+                                    của khách hàng là bảo mật và hết sức quan trọng với chúng tôi.&nbsp;Thông tin của
+                                    khách hàng sẽ được chúng tôi sử dụng với những công việc được đưa ra trong chính
+                                    sách này.</p>
+
+                                 <p>Chúng tôi chỉ sử dụng các thông tin của khách hàng trong thời gian mà pháp luật cho
+                                    phép và chỉ phục vụ cho giao dịch giữa khách hàng và công ty.Thông tin của khách
+                                    hàng tuyệt đối sẽ không được mua bán hay chuyển giao cho bên thứ 3.</p>
+
+                                 <h2 class="fs-18">Thông tin khách hàng mà chúng tôi thu thập gồm:</h2>
+
+                                 <ul class="">
+                                    <li>Thông tin trên CMND</li>
+                                    <li>Số điện thoại liên hệ</li>
+                                    <li>Địa chỉ giao nhận</li>
+                                 </ul>
+
+                                 <h2 class="fs-18">Các thông tin trên được chúng tôi sử dụng vào các mục đích:</h2>
+
+                                 <ul>
+                                    <li>Đăng kí thông tin thuê bao di động với nhà mạng</li>
+                                    <li>Thông báo về việc giao hàng và hỗ trợ khách hàng</li>
+                                    <li>Xử lý đơn hàng của khách hàng trên&nbsp;KhoSoDep</li>
+                                 </ul>
+
+                                 <p>Chúng tôi sẽ chia sẻ thông tin khách hàng (Địa chỉ nhận hàng và số điện thoại liện
+                                    hệ) với công ty chuyển phát nhanh để giao hàng cho quý khách.</p>
+
+                                 <ul>
+                                    <li>Bảo mật thông tin cá nhân:</li>
+                                    <li>KhoSoDep&nbsp;đảm bảo thông tin khách hàng sẽ được bảo mật. Các thông tin cá
+                                       nhân của khách hàng sẽ được chúng tôi sử dụng đúng mục đích.</li>
+                                    <li>Sau khi đã hoàn thành giao dịch thông tin khách hàng sẽ được chúng tôi xóa khỏi
+                                       hệ thống chỉ lưu lại các thông tin cần thiết để hỗ trợ khách hàng dịch vụ về sau.
+                                    </li>
+                                    <li>Chính sách bảo mật:</li>
+                                    <li>KhoSoDep có thể thay đổi chính sách Bảo mật và mọi thay đổi sẽ được công khai
+                                       minh bạch trên&nbsp;KhoSoDep.</li>
+                                    <li>Tất cả các thay đổi về chính sách bảo mật chúng tôi đều tuân thủ theo quy định
+                                       của Pháp Luật Nhà Nước hiện hành.</li>
+                                 </ul>
+
+                                 <p>Nếu quý khách không hài lòng với việc chúng tôi xử lý thắc mắc hay khiếu nại của quý
+                                    khách,</p>
+
+                                 <p>xin vui lòng liên hệ với chúng tôi tại&nbsp;khosimsodep.com@gmail.com</p>
+
+                                 <p>
+                                    Mã MD5 của
+                                    chính sách bảo mật : 2013f46c724c620b0fdba573dfb44dee
+                                 </p>
+                              </div>
+                           </div>
+                        </article>
+                     </div>
+                  </div>
+               </div>
+               <!-- Sidebar left -->
+               <div class="sidebar-left">
+                  <section id="box-sidebar-left" class="box box-sidebar-left">
+                     <div class="box">
+                        <h2 class="header">Sim Theo Mạng</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list">
+                              <li><a href="category.html">Sim Viettel</a></li>
+                              <li><a href="category.html">Sim Mobifone</a></li>
+                              <li><a href="category.html">Sim Vinaphone</a></li>
+                              <li><a href="category.html">Sim Vietnamobile</a></li>
+                              <li><a href="category.html">Sim Gmobile</a></li>
+                              <li><a href="category.html">Sim iTel</a></li>
+                              <li><a href="category.html">Sim Reddi</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <h2 class="header">Sim Theo Giá</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list">
+                              <li><a href="javascript:void(0)">Sim dưới 500k</a></li>
+                              <li><a href="javascript:void(0)">Sim 500k - 1 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 1 - 3 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 3 - 5 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 5 - 10 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 10 - 20 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 20 - 50 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 50 - 100 triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 100 - 200 Triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim 200 - 500 Triệu</a></li>
+                              <li><a href="javascript:void(0)">Sim Trên 500 Triệu</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <h2 class="header">Sim Đẳng Cấp</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list">
+                              <li><a href="javascript:void(0)">Sim Lục Quý</a></li>
+                              <li><a href="javascript:void(0)">Sim Ngũ Quý</a></li>
+                              <li><a href="javascript:void(0)">Sim Tứ Quý</a></li>
+                              <li><a href="javascript:void(0)">Sim Tam Hoa Kép</a></li>
+                              <li><a href="javascript:void(0)">Sim Lục Quý Giữa</a></li>
+                              <li><a href="javascript:void(0)">Sim Ngũ Quý Giữa</a></li>
+                              <li><a href="javascript:void(0)">Sim Tứ Quý Giữa</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <h2 class="header">Sim Ấn Tượng</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list">
+                              <li><a href="javascript:void(0)">Sim Taxi</a></li>
+                              <li><a href="javascript:void(0)">Sim Lặp</a></li>
+                              <li><a href="javascript:void(0)">Sim Gánh Đảo</a></li>
+                              <li><a href="javascript:void(0)">Sim Số Tiến Lên</a></li>
+                              <li><a href="javascript:void(0)">Sim Tiến Đôi</a></li>
+                              <li><a href="javascript:void(0)">Sim Tiến Kép</a></li>
+                              <li><a href="javascript:void(0)">Sim Số Độc</a></li>
+                              <li><a href="javascript:void(0)">Sim Kép 2 (AABB)</a></li>
+                              <li><a href="javascript:void(0)">Sim Kép 3 (AABBCC)</a></li>
+                              <li><a href="javascript:void(0)">Sim Số Đối (ABC.CBA)</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <h2 class="header">Sim May Mắn</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list">
+                              <li><a href="javascript:void(0)">Sim Đại Cát</a></li>
+                              <li><a href="javascript:void(0)">Sim Đặc Biệt</a></li>
+                              <li><a href="javascript:void(0)">Sim Ông Địa</a></li>
+                              <li><a href="javascript:void(0)">Sim Thần Tài</a></li>
+                              <li><a href="javascript:void(0)">Sim Lộc Phát</a></li>
+                              <li><a href="javascript:void(0)">Sim Tam Hoa Giữa</a></li>
+                              <li><a href="javascript:void(0)">Sim Năm Sinh</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+               <!-- Sidebar right -->
+               <div class="sidebar-right">
+                  <section id="box-sidebar-right" class="box box-sidebar-right">
+                     <div class="box">
+                        <h2 class="header">Tin tức</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list pb-2">
+                              <li class="border-bottom pe-2">
+                                 <h3 class="fs-14"> <i class="fal fa-check-circle text-main"></i> Lợi ích mang lại
+                                    của eSim là gì? Những điều cần biết về eSim</h3>
+                              </li>
+                              <li class="pe-2">
+                                 <h3 class="fs-14"> <i class="fal fa-check-circle text-main"></i> Khám phá đầu số
+                                    099 là mạng gì và có ý nghĩa gì đặc biệt?</h3>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="box">
+                        <h2 class="header">Hỗ trợ khách hàng</h2>
+                        <div class="box-content box-menu-sidebar">
+                           <ul class="list pb-2">
+                              <li class="border-bottom-0">
+                                 <div class="">
+                                    <span class="fs-14">Hỗ trợ khách hàng</span>
+                                    <p class="fw-bold">1800.8029</p>
+                                 </div>
+                                 <div class="">
+                                    <span>Quý khách mua sim</span>
+                                    <p>Xin vui lòng nhấn vào chữ </p>
+                                 </div>
+                                 <div class="mb-2 pe-none">
+                                    <form class="d-inline" action="/trangdatsim.html" method="get">
+                                       <button class="btn btn-datsim btn-sm rdx-custom-3 fw-bold">
+                                          <span class="text-white p-2 fs-12-mb">Đặt sim</span>
+                                       </button>
+                                    </form>
+                                 </div>
+                                 <span>Thời gian làm việc</span>
+                                 <p class="fw-bold">T2 - CN : 8:00 - 21:00</p>
+                                 <p>Chúng tôi sẽ liên hệ lại cho Quý khách</p>
+                                 <span class="pb-1">Trân trọng cảm ơn!</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!-- Footer -->
+      <footer class="bg-footer p-3">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-md-3 col-lg-3">
+                  <div class="fw-bold fs-18">
+                     Công ty Kho Sim Số Đẹp
+                  </div>
+                  <div>
+                     <p>Công ty <strong>Kho Sim Số Đẹp</strong> chuyên cung cấp&nbsp;<a href="javascript:void(0)"
+                           class="text-decoration-none">
+                           <span class="text-footer"><strong>Sim Số Đẹp</strong></span></a>&nbsp;Viettel, Mobi, Vina giá
+                        rẻ, Giao sim miễn phí toàn quốc, đăng ký chính chủ khi nhận sim.</p>
+                     <p><strong>Thông tin liên hệ:</strong><br>
+                        <strong>Hotline:</strong>&nbsp;<span style="font-size:14px;"><span
+                              class="text-footer"><strong>18008029</strong></span></span><br>
+                        <strong>Email:</strong>&nbsp;cskh@khosimsodep.com</p>
+                  </div>
+               </div>
+               <div class="col-12 col-md-3 col-lg-3">
+                  <div class="fw-bold fs-18">
+                     Thông tin hỗ trợ
+                  </div>
+                  <div>
+                     <ul class="main-footer">
+                        <li>
+                           <a href="javascript:void(0)">Giới thiệu</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Thanh toán</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Liên hệ</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Đăng ký thông tin</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-12 col-md-3 col-lg-3">
+                  <div class="fw-bold fs-18">
+                     Chính sách và quy định
+                  </div>
+                  <div>
+                     <ul class="main-footer">
+                        <li>
+                           <a href="javascript:void(0)">Điều khoản & điều kiện</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Chính sách vận chuyển</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Chính sách đổi trả</a>
+                        </li>
+                        <li>
+                           <a href="javascript:void(0)">Chính sách bảo mật</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-12 col-md-3 col-lg-3">
+                  <div class="fw-bold fs-18">
+                     Kết nối với chúng tôi
+                  </div>
+                  <div style="padding-top: 1px;">
+                     <!--twitter-->
+                     <a class="cursor-pointer share_btn2 shtw">
+                        <i class="fab fa-twitter"></i>
+                     </a>
+                     <!--facebook-->
+                     <a class="cursor-pointer share_btn2 shfb">
+                        <i class="fab fa-facebook-f"></i>
+                     </a>
+                     <!--pocket-->
+                     <a class="cursor-pointer share_btn2 shpkt">
+                        <i class="fab fa-get-pocket"></i>
+                     </a>
+                     <!--feedly-->
+                     <a class="cursor-pointer share_btn2 shfdly">
+                        <i class="fas fa-rss"></i>
+                     </a>
+                     <!--googleplus-->
+                     <a class="cursor-pointer share_btn2 shgp">
+                        <i class="fab fa-google-plus-g"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-12 border-top pt-4">
+               <div class="row">
+                  <div class="col-md-12 col-12">
+                     <div>
+                        <p class="text-center"><strong>© Copyright 2022 by <a href="javascript:void(0)"
+                                 class="text-decoration-none">
+                                 <span class="text-footer fs-16">khosimsodep.com</span></a>
+                              &nbsp;- Kho Số Đẹp giá rẻ lớn nhất tại Việt Nam</strong>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="assets/fontawesome-pro-5.15.2/css/all.min.css"> -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+   </script>
+   <script src="./assets/js/main.js"></script>
+   <script src="./assets/js/lazyload.js"></script>
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  -->
+   <link rel="stylesheet" href="assets/fontawesome-pro-5.15.2/css/all.min.css">
+</body>
+
+</html>

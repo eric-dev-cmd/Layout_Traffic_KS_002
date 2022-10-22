@@ -1,1 +1,61 @@
 // CATEGORY
+#related-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -5px -10px;
+
+    & a {
+        -ms-flex-align: center;
+        align-items: center;
+        color: #4a90e2;
+        font-size: .875rem;
+        -webkit-box-align: center;
+        margin: 0 5px 10px;
+        min-width: calc(33.3% - 10px);
+        text-decoration: none;
+        padding: 8px 12px;
+
+    }
+}
+
+.contact a {
+    background: #2196F3;
+    min-width: 200px;
+    width: 100%;
+}
+
+.ico img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.btn.btn-chat {
+    display: inline;
+    padding-bottom: 10px;
+    & span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+}
+.contact .btn.btn-chat {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+.no-sim .contact .btn {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #333;
+    font-weight: 700;
+    margin: 0 0.25rem;
+    width: 150px;
+}
+ul{
+    padding: 0;
+    
+}
