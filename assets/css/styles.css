@@ -296,7 +296,6 @@ nav .main-menu li a:hover::before {
 
 .content-filters .box {
   display: flex;
-  margin-right: 56px;
 }
 
 .filter-prefix-grid, filter-price-range-grid {
