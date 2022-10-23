@@ -186,12 +186,26 @@ ul {
   font-size: 24px;
 }
 
+.fs-22 {
+  font-size: 22px;
+}
+
 .fs-20 {
   font-size: 20px;
 }
 
 .fs-16 {
   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.news-icon {
+  position: relative;
+  top: -2px;
+  left: -5px;
 }
 
 .header {
@@ -537,6 +551,17 @@ ul {
 
 /* Portrait */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .box-content ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box-content ul li {
+    width: 49.9%;
+    text-align: left;
+  }
+  .box-content ul li:nth-child(odd) {
+    border-right: 1px solid rgb(224, 224, 224);
+  }
   .content-detail {
     margin-top: 20px;
   }
@@ -569,7 +594,7 @@ ul {
   }
   .header-main nav.active {
     left: 0;
-    z-index: 1000;
+    z-index: 99999999999999;
   }
   .header-main nav ul {
     padding-top: 0;
@@ -605,9 +630,6 @@ ul {
   }
   .wrapper-content .sidebar-right {
     width: 100%;
-  }
-  .box-content ul li {
-    text-align: center;
   }
   .hide-mb {
     display: none;
@@ -770,17 +792,6 @@ ul {
   .content-tag-nosim {
     margin-top: 20px;
   }
-  .content-filters::-webkit-scrollbar {
-    width: 0;
-  }
-  .content-filters .box {
-    margin-right: 27px;
-  }
-}
-@media only screen and (min-width: 1024) and (max-width: 1399) {
-  .hide-mb {
-    display: none;
-  }
   .content-filters {
     overflow-x: auto;
     white-space: nowrap;
@@ -801,6 +812,41 @@ ul {
   .z-index-mb-1 {
     position: absolute;
     z-index: 1;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1) {
+  .content-filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .content-filters.active-filter {
+    height: 80%;
+  }
+  .content-filters.unactive-filter {
+    height: 0;
+  }
+  .content-filters::-webkit-scrollbar {
+    width: 0;
+  }
+  .content-filters .box {
+    margin-right: 27px;
+  }
+  .z-index-mb-1 {
+    position: absolute;
+    z-index: 1;
+  }
+  #table-sim {
+    margin-top: 46px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  #table-sim {
+    margin-top: 46px;
+  }
+  .d-flex-between {
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
