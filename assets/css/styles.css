@@ -635,6 +635,7 @@ ul {
     display: none;
   }
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
@@ -700,6 +701,7 @@ ul {
     font-size: 12px;
   }
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
@@ -793,6 +795,7 @@ ul {
     margin-top: 20px;
   }
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
@@ -816,6 +819,7 @@ ul {
 }
 @media only screen and (min-width: 1024px) and (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;

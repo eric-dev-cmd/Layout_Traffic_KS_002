@@ -125,6 +125,7 @@
   }
 
   .content-filters {
+    overflow: hidden;
     &.active-filter {
       height: 80%;
     }
@@ -210,6 +211,7 @@
   }
 
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
@@ -334,6 +336,7 @@
   }
 
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
@@ -362,6 +365,7 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1) {
   .content-filters {
+    overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
     width: 100%;
